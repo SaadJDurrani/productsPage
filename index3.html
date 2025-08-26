@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Men's Fashion Quartz Watch - Unbeatable Style & Comfort</title>
+    <meta name="description" content="Discover the perfect blend of style and functionality with our premium men's fashion quartz watch. Alloy case, silica gel strap, precise timekeeping. Limited time offer!">
+    <meta name="keywords" content="mens watch, fashion watch, quartz watch, alloy case, silica gel strap, casual watch, affordable luxury">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #764ba2;
+        }
+        
+        .cta-header {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .cta-header:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+        
+        .hero-image {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            margin: 40px auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .cta-main {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 10px;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+        }
+        
+        .cta-main:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255, 107, 107, 0.6);
+        }
+        
+        .price-tag {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+        
+        .price-tag .old-price {
+            text-decoration: line-through;
+            opacity: 0.7;
+            font-size: 1.2rem;
+        }
+        
+        .price-tag .new-price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffeb3b;
+            margin-left: 10px;
+        }
+        
+        /* Features Section */
+        .features {
+            background: white;
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: 700;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 60px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 30px;
+            border-radius: 20px;
+            background: linear-gradient(145deg, #f0f0f0, #ffffff);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #764ba2;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .feature-desc {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Benefits List */
+        .benefits {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .benefits-list li {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .benefits-list li:hover {
+            transform: scale(1.05);
+        }
+        
+        .benefits-list li::before {
+            content: '✓';
+            background: #4caf50;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        
+        /* Highlight Boxes */
+        .highlights {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+        
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .highlight-box {
+            background: white;
+            padding: 40px 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #764ba2;
+            transition: all 0.3s ease;
+        }
+        
+        .highlight-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .highlight-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #764ba2;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .highlight-desc {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        /* CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        
+        .final-cta p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .urgent-tag {
+            background: #ff4757;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .footer p {
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .cta-main {
+                padding: 15px 30px;
+                font-size: 18px;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .final-cta h2 {
+                font-size: 2.2rem;
+            }
+            
+            .header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .benefits-list,
+            .features-grid,
+            .highlights-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-main {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">TimeStyle Pro</div>
+            <a href="https://www.temu.com/pk-en/1pc--mens-fashion-quartz-watch-alloy-case-silica-gel-strap-round-dial-pointer-display-battery-powered-non-waterproof-for-casual-wear-g-601102217167827.html" class="cta-header">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elevate Your Style with Premium Precision</h1>
+                <p class="subtitle">Experience the perfect fusion of sophisticated design and reliable timekeeping with our exclusive men's fashion quartz watch</p>
+                
+                <div class="price-tag">
+                    <span class="old-price">$89.99</span>
+                    <span class="new-price">$24.99</span>
+                </div>
+                
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTExIVExUXGBgXFRgYFxUYFRgWFxgYFhgaFhYYHiggGCAlHRgXIjEiJSkrLi4vFyAzODMtNygtLisBCgoKDg0OGxAQGy0lICYtKy0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcCCAH/xABJEAACAQIEAwQFBwgHCAMAAAABAgMAEQQSITEFE0EGIlFhBzJxgZEUI0JSVKGxU2JygpLB0dIVM0OTwuHwFiQ0VYOistOUo+L/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAgMBBP/EACIRAQEAAgIDAQADAQEAAAAAAAABAhEDIRIxUUEyYXEiE//aAAwDAQACEQMRAD8A7jSlKBSlKBSlKBSlKBVX9I/EpoME3ycNzZGWNStgyg3LEEkWOUHXperRXPvS9M4jw6IJSS7MeVvZVAFzcad6qxm65l6c2bFcWb+0xv8A8q3+KtLF47Hj5uXE4qINY2aaSXNbbLkdbbm4JttvpWzll/J4z9px+D1ocQkRGVsUuISJVa2Z3zM5KWCkNcaAm163smmcteDzDviJz+oP8U1fnKY/2s5/6cX75axf01wvwxX97L/PQca4X4Yr+8l/nqOne2ZMO/STE+5If3S1tYfB42UEq0kqg2zvMRe3kwYi22523NaS8b4Z9bFD/qTfz1sYV2seXh5posx5bh31U97b371WOnLttjhGPG2YezEW/BK7r2Lxsk2CheYWly5ZLkElkJS5I0N7Bvf0rgvNk+xzfGSuweiWVmwTBkZLSuArFiQMqH6Wu5NTySadxva60pSsWhSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBXHvS18pkxirDJkRIlB1td2ZmP3ZK7DXGO3mL/36bXYqPgi1pxTtGfpUP6Px/2g/tGsGN4c4ynFPzV3VSSQGPX4X+NS/wAr86ie0mOa8aqgkBViR10Ita+nWtstaZze2WP5N+ST4Csy/JvySfCq4ZJumG+6nNxH2f7j/Go8l6WqJcKTrEnwrF/RmIzOuHmyRhjkW+gB1/fVaE8/2c/ED8TVk7OY5jErMMpN7jzDFf3VWNlTZpk/oviP2j7/APKuleiIYhFxEc7ZzmR1PkwZSP8AtHxqmJxHzq7ejbF5pJR+YD8G/wA6ck/5Mb2v9KUrzNilKUClKUClKUClKUClKUClKUClKUClKUClKi+0/EDBhZZAbNlyp+m3dX4E391J2Ofdo/SlMk0kWGiRgjFA7ZjfKbEgAgDW/jVQxvEpsQ7TPhmLPq2Uxhb2tpmubaV7iwAQV6w0xCL+iv4CvVjhIwuVrTJk+yN+1F/LWhiuJ4iBs0eF75FrMwYBb3JAAFtbVP8Ayg+NaHFsYpXRhmtbz3vXcup7IjB2r4l9kHwP8a9DtTxL7IPgf41rR8WI3a1bcHEy20i/tVl5T6vX9PSdpuJnQYIfA/xr8w+Jlcsxwj5ie+FYAB7WIAI8r79alcFjZQbnUeRBrdGJF3O12v8ActXj3+pv+ITNJ9lm+KH/ABCpTgPabEYJmePDNdwF+cAy2vmNsj3vpW0uL86x4qfNkH53+B6q4ubX/sT2+GNlMDxCJ8pYWYkNa1xYjQ2N9zsavFcH4dKIMRFiF9aNgxt1XZx71JHvru0bhgCDcEAg+IOorDkx8a1xu3qlKVmopSlApSlApSlApSlApSlApSlApSlAqi+kXHXaOAHb5xvabhfuzfEVd5pAqlmNgAST4AamuK9oeNBneZz65JUdbbKB7BateKd7v4jO/jXxTgAk6Cq+2PJU8tWfIgLmxIUKNSbbDTc2qI4txh5Dvp0A2H8T51YeAceBGHgjEeHkNg8sheKAhC7F5HjcF8xRNCB3g4zEOQO58u/RMPqsYnirt1P+vIaVoSO7X9Y6Em19ANSbDoPGtjENEqnMe/na+UjIVtsANrG9rdDtpWGbjJeQmNLO90sgtmzrkKhR9YGxAGuY1nq1TNwJ+TNFiHW8SyFGY3sGKG57veuoYPoL93TWrZ6S0SGNYjJHI04WRVjkMiInMeQTXKizSZ8u50U6kAVRVxM7IWVLKMuwA9YlVIAte5BFx4VmEGMJQGNhnZUTNoCxIUAE6bkCnibaMTFTdSVPkSD91Xzsc8EqIs+O5UhkYMr66Hl8v1xZhYSbMDmkXopvRzK+XO0Xd7veIt64YruNbhWt+ia2+EcRjimjl5auUYOEe+Qsuq5vEBrG19bWp4m3RZ+EToSO7KwIBERJa5BbuodWFhm7hY5WUkAGowTXtYg2b8LgipTgvE8JIb4QrhZsuVUa5UZiI3JEj5JCVWF7IOY3JcEtmAr9g4Jh4h8jmAixIUSpNzVzTmRnBzB1ACra5BJ0QMpszPXZnlHLjKwl66v6O+J83CKhPehPLP6O6fdp+qa4vjXbDTvh5GVmS18pNtQGGhFxoRdSARVv9G/GBFiwhPcmGQ+GfdD8br+vWuVmePSJPGuw0pSvO1KUpQKUpQKUpQKUpQKUpQKUpQKUr8JoKl6R+LiHD8sHvS6eeQan46D3muB8fxEpZS6socXQkEBk8UvuvmN71b/SV2oR8UbrzEAsFuVuig5QSNQHbU21yk2sbGq7jsfFPzyJkiEbpPGDHIzYhyAlnDEojIllawCuRexFiO7605r9QsECjLJIM0ZLAhXAa4HvKnvKRcWPxrSxXFHKrGpJVbhfAFjcge0i9v8AOseMmaVmyAKt9baIuYmwJ+iL6a1sQxCxVLiNrXzDvNazAHoCpuMy2uCfGrxwctZcT2cmiRHnja00ZMVjqp0Klr2FjtbwJI1FZYsO3dsRHlvbJvbmc1QWa5OVhod/M1aYePxSYBsLiM2eM3wzgXIvclW8r/8AkRpVejN9he/hW3HhP2Iyvx+w4Nb31JJBOpsTmzbbesSdtzV27eoCnDxt/uyNppqApvcag+dU9A17WN+gsb/Ctu8jkA5mKAgDUlR1FunStbxy5SxHlqWNROHAeozpqCLMd1DKvrX2DMPK5rXxHDmJuUWWyZEAurXWLlRD1rWBAY7Em/jUuENs1jlva9tL+3atzg2JijmWSVHdVNyq2zHy1IFdywx1vScc7v2qfG+z2IwTIrkFnRXVRuQxsLDffTz0rUbEs5s9ywAUhr5gEAQLr4AAW6WtVo4ni5MTO+KkJSR2zJbeJV0iVfAqPv1quS4C5WONCZSQFK3ysAFUKq62PrOzMQNDt189474y1tMpb0M7M17szs176szMx8d2JJ996mcJipsOyiVJIWvmUurIQVPrLmGoBHxFQkEXMsFKhswVrsMoubZ8w0y9SfDWrzxbB/KhIryxyYiNo4eYkasglRXaRzPHtE4BJzBVTU5Sysax7xq/bpHEfSZEkcHKj580qBmQMAsdvWEja5Te9rjbWpHgXbqPET8kxmIN/VlmBLHwYD1SeliRtrrXA+BcYhSN2mz5lC8oKmZyddLnRQL6m+21TUWKnxDcwk4HDRsrOwABuCMvea5DX89zewrSY42JtsfSFKieyvFhisJDONc66mxUEqSpYA7AkEjyIqWrFZSlKBSlKBSlKBSlKBSlKBVa7fcYGHwrkm2YG/jlA71vboP1qstcn9JOIXEYk4d1kaJFJkEds9lAsFBIzNzHU5RcnlmwOooOLz4h5pGchmJJZgoJIUb+4DqfCvzi+LNljR3dRcR5gAwVjmtlBNtTewJFybVIYjBKobEwLMMOWWOGZXsnNEYeZO8qyOti4VrL6ut9bQuGBLGW9irLkBVirNuAGGgbqAbDfWqxjlbKYVk7hWSM2tIGFmN91BFsyGwNiNPPes5a1XTF9qcPiYSuMw3zyjuSw2XMfzlNsvtGnlVDkevTh1PTLL2zmWpjshjVjxkDs2VVe5IuSBY9BqfdUDNh5FVXZGVG9ViCFN9rNtXiHEFWDKSpGxBII9hG1d3vo06QeMRmMLmPMOHljVgHZU5kmZLORm740JBIF7DS9e4uJr3EAVyscMU1xIpZwXIyyKLhk0A+tbT1RVBhxb/WbYD1jspuB7AdR4VIQTNr3muSCdTqRcgnxNydfM1WOG03JbsbjI2jdblgFPKbK6yW5t8sgtlZb3OY9fPSq8T99YxMfrHw3OxNz9+teUzOwVAWY9BvWuOPjGdu3t26Vm4jwBlwjYmb5uM91AbCSRm0sgJH79L1OSwYbhiLLjLS4lheLDA9ehk+qKrkfaYy4oYrGx/KcvqRBsiRjoIxsPadTWOXJcusfTTHCT2icRgZkRJzCUW+RnJAEjEX7sYACLlG1t9bnS2rio1RGKyMufLZADlZd2ztmHqm1hY79LXqb4/2hnxrpz2EcKNdIYh3I9xexI5jWJ1JG/So/F4QHMi6Wa6lmBsOuZluNtTascsbZ21lm2hw9pI2WYRsVRlOYqTHqTYMbW1ysPOx8K6p2Y7N4ziYM7YrDLE7d5FUu6KAAO43duw8b6KPdBR4VnwsuCZ8PK8OaEyRuO8bI+FSGUqFkvIqqVLLflHulgCYvsXx2bDEPC5Vl+DKdcrL1FZ4W+o7l9fTyKAAALAaADawr1Va7Fdrkx6N3THLHl5i7r3r2ZD1BsfMfAmy1NmlQpSlcClKUClKUClKUClKUH4xsL18p9ueLPLi2cMRs2hI7xYuDp1FxY9K+n+OzZMNO/1YpG+CE18q4zhEkgaYMgBWR1U587JCLORZCgtY6FgTbag1sdKwjGYEMw5jHm8wSNIT3yoJEb6EEb+IHX9wWHI5YZFFlLhsqgkE2AzKxDj2gEWtWvxMrbTlW7tzCXKHQa9/XN47C/SpTheBbvMkcpQqgUtEFJtf6lwene3NbcU7iMvT9MZdsq2vqSToAo3Zj0A/1rUpguEqACEVy1rNIpYtfS8cINgLj6RLa144Mig3kW4JJcXKkrGQoUEA5TnJOot3AD4VMHEAsT531set+90PwrW3yv8ASPTNDxRsCoixUSzYWVYyycsLlLKxbKRtY6AW11NaXG+wySxnFcNk50W7REjOnkP89PPpUd2z4lLMY0KgDIuw9YrnUEk6mwY6edeOynEJcMfm8yuTe93ICgXKiMaXPVjcWG3WsvG+8V7+q9GxUlWBUg2IIIIPmDqKtfAEhKSNMQAMupJUAa638z+FT3EnwHEVbmAQYuMC5UWzezy1vbUew1CR8DVQsE8oEbNnkZbglEsFFt9SxJAva2/Wu/8Ar/zpzx7avZvAT402ijIBY2PQLfS/nb/Qqz4rimH4aGhweWfFgXklJBWMXCnJ9dhfYbWPgTWlxntZGInw2AIghXKjykEM976aA5V0Og9/Wq5E0YN1UJfcAsdbam7EnU6713yy5Or6c1MW1xWLEJAuJkbmcxpTIW5TbCLlFge9q0moubC21aEiwyWXuRzWTvR/8OzOucI1tFYai66XB3tWXtNj8QcPFGS3Lu+1wGuIsoa2jW5Yt7DUBw9SrXKK1wVBYEhCbd8KDqQL2vca3tcCua+K/wBZndgSrAhgbEHcEaEVYZbvHG5ZT3coUFbga/QUd0e3U79a1eJcJmxBikgjMjPEOYBYHNGcmYgnqMvwrchw8sUSwzwSRscxVmZcnS9kGt7W18q0mcvtFmlewXEJcOzrEyjvA6pG+VkJyOudTkYBmswsdTUj2eKg5pHCrY5mN+mvtYnwFyb1u4LhTzSxpPzlwzOyRsi3HNZM+RDYhmLW0/CvGL4Sil4lJYKyA90sQ+VM6gEIWs+YXsu1eadZNb6dQ9HnGuH4csxnKvIEU5lsi6m12BNtdybAV1WKQMAykMpAIIIIIOoII3FfLKcNyAty3NtbmJBa3nnLD2jWvojsDjhPgIJBsQ4Gt7BZHQC/Xbeq5J+uY38WClKVmopSlApSlApSlApSlBHdoos+ExCDdoZV+KMK+Y4O0MKYKXCmJy8mY5gwyEsDlLa3Fu5t+TH1jX1W63BB2It8a+OOJYQxSyRHeN3jPtjYofwoNztVjZZ5DJMXLsIzd4VgJGUKCEUkW00a+u9WfgXazFRRchGitGB9GGXRifpqTtbYm40qn4xFMaEZASmoEhd7obFnB/q76WUdB8d7gsyGRAL96PKczRk5ktayqAUHrWzXJ3rbjktkqM7ZOkhDK5sqgs7NItgHLM7OJgFVb3JzNvp3TUbisbIGKbEEg+RBsakcbh7X3sws1tDbXUeYufaCR1rVg4bdswtYkagdwEseg1QAW0OtaXHxuvxEu5tYMDhhKis5uwHnbULc6nrlGm3xrNHwjNdst1GjGxIFx1Cm49u16kXxxZIg5Ud0MdLEFi1wBuTpc+0WtUXxPjSoOXCueZu6u1wSBe3ht11Hlue7kmomS2q9jpgMQzjdWAHtUAEX8NLVr9oOMh2dQpDC63BNtQobr4rawsNKk8LwYBGla8mQjMb2iVvAfSkN9zovTwv+Y/ARJGsrwoVkv/ZzJYgi95LmxOYEEgXvWeWrrUazpEdnsWVSQozo6FZAUNnygFHy+wMP2q1uJPKkjLIfnL3fvKxDHU5ipIzeI3B31qSxfB2gfPBfOou0TG5KkC+Ui2Ya2K+sDvrWGDCxSqzQhWYrZIiQjIxYMWO3MsMwGthceFqiZO2NrgqtIg5gzBQADl6Xa1266lgPfUrBw85rxnKw7wIfI2n1Gvvbw1rLgYplgWEqxszICUa4iBV0IN7AFi2nQIPKsfFOKwwKMwBfKAYwcxLAWuT/AGYO5F76mwtYjaZYyMrLajeO8Zmgki5E0kcgRmZwxzkyt9JupsAb/nVvcOSfEKuJxGKeZgGVVcsSATuNLW08apWJxDSOzuczMbn2+Q6eFq6hw/C8vDwxkWIAYnvC+m5B06bjpXOOTe6rO6mkLwzGyQ4pS7usUbM0YbmGESiIqrZBf6RUMVF7XrY47i1dJJQwYExgk5imZUjUheaC2W+gzC+lRuEhfEF2EihM/d5kgVM0jHIq5tMzBT4erqakIIVEYjljDAswdT46ruNiMo1FYTvJp6iKwzL6xMZUamyR3sNd8or6N7A4dEwECx2MdmZCNiruzqR7QQaoXo27NcPmV4ykjlCjsJGV0bU2FsoNrrqL2NdahiVFCqoVVACqAAABoAANABVZ38cx+vdKUrNRSlKBSlKBSlKBSlKBXzP6Y+EGDikxtZJgsyeHeGVx7c6sf1hX0xXNfTn2eM+DXEoLvhiWbxMLWEnwIVvYpoOF4OYcoqx0Rs4BkjRLN3WshGaVz0sdADpWKKVo7oZLCNg0SEv3icxsqKpBLXtmNrA2vrapnhPA5xAcapsigmy25hTMySBWKlUawe1wToTba+px3h3JdWjkSTl5XR42LoU0ayuVXMYz3ToNtQL2q8a5Vuw/A5ZIXmIyRopYlrKNBe1zufLeoER7OpK6aEGxsfAiknaCbEGFcVLnBX5pSUCjLYAtEmgJ6E6mx0Gl9xj417eO3KbrzZyY3pHzZ7ayOQfzmP4mvzhUKgljfvNyxa9woXmSkW2OWwB6ZjWXEmvHDprR3GW6ysDmVWW0sQVMytobspFTzSTHpXHu1l4li1YEJdUPdVTbRfq6eF9+u9a/anjMjwRoyrq0t271yGMEhGpsO8gPusLAWqBx2JcEKbqQLsLWIY62I6aWHuqY4YDLEFc3AO2uts1tL2HrHUC508Kx/l6X/Huo7gU2VirZrsfmzmsqSdHbS56DQjQm99qxdpsMqT5l0WRVlUeGbcaeYNWPh/DWEgaNQchDElQ6qOpYMCPfbe1tbVFdpcWUxELCxaNAdQLXZmbbYaEEW208KnPHSscttRsHNkIMrlwAWizHuqxAUNroxJ2tpdQSCwFeey/C48RiUhllECNe7sQLHYDXrf8AA1OcIxsUiZJiDHkyqqpZpXuzqs3LXNI4flWUMgktmLXBvFdpMIgkEa3acs3MRTmEYJ+biZ/7SVRozbX01IJrOKSnFuxk2AxEZxALYbMCJ0XNGwGo2Nt7aXq0cYkJQrEczMMkQvluSOgc6G1za+p0F9K1cHwbErBHFNiS8Nw7wkk2ddVsT01B63t7qx4mGLGMIkkczLJlVAo5Zjy5pZC56rlIA6+d9Nt3HHtn1lekpw3iEpilxndVnN3WGMICoQxRKWuOVaSJj3SzEyLpqKjuEcJmxLpDCpdrb9ANizHoNN/PxrX43gEhmEcYCsScyI8jIUJVoSxf6diS1iy6KQRerD2K7ZYzBK0cuBiEa3d3VhzWU6LdgxGlm1tbTpucsN+4vJ1DsV2STAI3eLyyZeY2w7t7Ko6AXOu5+AFlrzG9wCOoB+Neqm3aoUpSuBSlKBSlKBSlKBSlKBXiWMMCrAEEEEHYg6EGvdKD5s47hX4PjJsOqs0bFJsOeZIndBJTMV1dQbqy3Gblqbiwqv4OfPdHKq17xsbBV1JKMzNljiF3bKq3JsPCu4emfs6MRhVnA78J1IGvLYgH4Gx9hauCMhBKsLEff5iu/wBuPM0HKL3jOU+sjBvmnI0fl3GYhWbLew7wNSMOMKWWQ32s2411COw7ufKVJAJ9ax1vWaAc1MzjJrkE7D5pma7ZJnNhc5i5dmJCpoPHXx/CpsOzxlOVIyaqwuQkljmjJ2zAWJ3sSDa5Fbceer0nLHay8K7OmfDz4hnEUcK3zHYnwqs4GQrKttnsri5Bykg5gRsVtmB8j41Nt2ieXBxcPjiWBUOZyWOV1RSSzk6gAKSd/eag3R1VmKMCVKrobZnUaX/QYn4Vp5XKXaNa1oxvD1n5k+YkuRkZbtGSWFzIdWQhbgg9bHa4Fjjl+YRbRqdYz30PqlGDMAovpcC3S9UhC8ZujMh01BKn4jern2iw8sXDcHikxEuefRxcC1gL2I11JrPvBVkye+I4+DDDPq1xop0ZzbVQLAhb/SIGnidKpHD4xi8Wonl5XNezPa4UnQC19BsPhWJMDPK1xHJIx3NmN/ax0++rFwnsBiJCplZYQbW1u2pIG2g1Fr3NLMsiWYtXjfBMXw3HNh4mbOf6p03kjcWDL4GxOv0T10vVq7IdkhhgJ5bNN9FdCqA31FxZtiCf8625Y8VP8lbElIvklwso1llAOnsWw9ozHbetbjvaFnV+SRYMA7XW92vqq/SGh1GguN9KY6x7ycy3l1HntNxfL3IxudTZsota6g9TYjS9wCCdxUHg+JPh5XZI0QnQoyt3LMGspJzoRa1wcwF9b61P9np41gRp8RmWJ+ZFHdzynZ25hZVFy7AZlOo3F42YPUZgcI/EMRGqoVTuRC7F2ax0zyEAva+rW0VQOlZ23OrkmMYoMB8rEsks+VzZgL98jYEDcjQKB5Cs+GWWIorhcQCVRLAk6izmQnRQP9WtXW+0voygnWFsOww00KhQ4UWkAAA5lrG4to19LnQ1n4F2EeGcSS4rnoLMFMSq3MAGpYH1QRe1tdLnQ5rxzxkTcbanOxnCmw2DiicksAzNc3sXYvlF+i5svuqbpSsWhSlKBSlKBSlKBSlKBSlKBSlKDFi8OsiNG4urqVYeIYWNfOPaHgRSWSFtHjYqG6m2x9hFj76+k65j6VuE2kjxKjRxy3/SUXU+9bj9QVpx+9VOX1y/g/ERhzyp1yrmBDKqMCCRnDBhYhlAUtYsqghQc7A4uOxRBxkN75rjmLLlUMVjIddBdQDkucotr0EnisOHUgqG8qiX4SwAaM5gQDlOh1F9G/jXcuOz05M5+taQgBbHmaXbMLWa50B6gDLqepNbyFkjQskkcb8zltbuNe0cmU9dgDr0rVwWIWJyZI9cjgK6gjMVIQ66EBiDfyqZ4gmHaElHayj5teacqvmjRlSGS72cZ5S17bDcWqZnlHbjKyRYyOUyEmK75txbKWy7AZtABYeFzWWPCycuCKTFK0UFjGhUgCw6m3Wwv7KgIl5nLiZlVS/rFb2L5FJNhcjujT2+NWRuzTNFBGcgyuQGTDjmHnZWDSuHuYxtmIBFtiCCavJv8c8Eg3G4FLWkQZr91ACRdw4AtroQANK1Mdx9g5iERV1B/ru5lsDJazC4J6ArqWGutV/AhZGVZGKAIyxkZR3u86hmOwzMddTt7p3i8mFYM2bmSurM7MXlfPlKxBJmOmUqrNfUhrWHqjl5aTjjUhikxqBfneaXBZjlGHEBOQG3ruwe99xZTtY2heJ4EwsoJNmRXXMpR7G4s6EnKQQwtc3sCLgipTA8QxSxiNHZVF7EXBCsLFA31dzYfWbxNeIuHjOpc52OYm+ouMvjvv1rkxyydtkR3DuFNMbtdY/H6TezwHnXW/RfwdeY0uWyRDKg6Z23t7F/8qp6mwrsvZTh3IwsaEWYjO/6Take7Qe6tMpMMeky+VS9KUrBoUpSgUpSgUpSgUpSgUpSgUpSgUpSgVD9reGfKMJLGBdsuaP9Ne8vxIt7zUxSkuh864eZWAtUjhcJ82mn0V/AVZu0HoqkeaSXDTomdy4RwwALG5FxfqT0qkMcTGTGZwCndN403XTfm67V6sc9sbjpIy4FToygjwIuKj5+zUTZygKEZfVJG9+nurzz8R9oT+7H7nrUKcQLOcPLG5NhJ0AsAVsD7TTLV9xyNSXg0g2ZvfY0+RS9WJ6bdDuKzNgeM+MfxWvB4fxj8z4rWfjPi936xJAwYA7Gp+DAJlBC3v469SP3VAnhfFydcnxSpLANiAgUTRWUkaqxNwTm8Ot6rGT45lak+SfCtXEjKyk+DfilM+J/LRf3Z/mrb4f2UxuPvy5Yu5YMSCg717bZifVrS5TSZG32Pg+U42KLdQeZJ+gmuvtOVf1q7jVL9HnYg8P5jySLJLIFW4Bsqi5IBO9yR0HqirpXmzy3WuM1ClKVCilKUClKUClKUClKUClKUClKUClKUClKUCuK8Z4f8/Lp/aP/AORrtVcN7ZcZngxuIjGHZ1EhKsAdQ4D+H51a8V7RnGrJw/yqs8YE6TAwtkGSzakahiRezCpU9qZuuFb4H+FfuBxKTmTmLym7pUNpcag2v/rWtstWM50r/wAvx35Yftn/ANlfn9I4/wDLD9v/APdWJ+HRfWX4isLcNj+svxFR41e4hfleNO8/uzN+56m+HYNhBHm9a3e2OtzfatTE4GJRcug94r2naJgoCwMwGxsdQSSOnhXcevab23vkvlXT/RNh8sMzeLgfBb/4q5F/tHL9nb4H+Fdo9FWY4BZHXIZHdsp3AB5Y+OS/vrnJZ4u4TtcKUpXnalKUoFKUoFKUoFKUoFKUoFKUoFKUoFKUoFKUoFcX9J0sycQcJiEhBSNrNkuTbLfva/Rt7q7RXLvTBNLBJDOqxlHUxtnViA6kstioNrgtv9Sr472nP0598txP22L/AOuo/GwxzsflmLVSoBjkTKFINwy7WvoK3j2nk/J4b9mb+WtKXjuaTM5Aa2UcoaBdTazsh8dr1tdaZxq/0FgP+Zf9y0/2fwH/ADMfFf41tHiy/Xm/u0/91YzxRPrT/sxD8ZqjUV2wDs7w+4LcQDDwutz5VMYTicuRf96VRYZRylJCn1QSd9La1FScVi2LTewth1/GQ/hUhheN4qNRGCi5dArxPnX806jaqx1HLttHic32q/shU13zs1FlwmHB1PKQk2tdioLG3TUmuD8Px2PnkSJCCXYKCsJsLm1yWewA318K+iYkCgAbAAD3aVHJXcI9UpSsmhSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBUT2n/qD7R++lKQc9fepSf/AIU/pj8DX5SqqVeNbEFKVxSwcA/rF9tX6lKBSlK4FKUoFKUoFKUoFKUoFKUoFKUoP//Z" class="hero-image">
+                
+                <div class="urgent-tag">⚡ LIMITED TIME OFFER ⚡</div>
+                
+                <a href="https://www.temu.com/pk-en/1pc--mens-fashion-quartz-watch-alloy-case-silica-gel-strap-round-dial-pointer-display-battery-powered-non-waterproof-for-casual-wear-g-601102217167827.html" class="cta-main">Get Yours Today - 72% OFF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Premium Watch?</h2>
+            <p class="section-subtitle">Engineered for the modern gentleman who values both style and substance</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⚙️</div>
+                    <h3 class="feature-title">Precision Quartz Movement</h3>
+                    <p class="feature-desc">Japanese quartz technology ensures accurate timekeeping within ±20 seconds per month, making it more reliable than most luxury timepieces</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">💎</div>
+                    <h3 class="feature-title">Premium Alloy Construction</h3>
+                    <p class="feature-desc">Durable zinc alloy case provides superior scratch resistance and longevity while maintaining an elegant, lightweight feel</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🏃‍♂️</div>
+                    <h3 class="feature-title">Ultra-Comfortable Silica Gel Strap</h3>
+                    <p class="feature-desc">Soft, skin-friendly silica gel band that's sweat-resistant, hypoallergenic, and perfect for all-day comfort</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Unmatched Benefits</h2>
+            <ul class="benefits-list">
+                <li>Battery-powered reliability - lasts up to 2 years</li>
+                <li>Versatile design perfect for casual and semi-formal occasions</li>
+                <li>Round dial with clear pointer display for easy reading</li>
+                <li>Lightweight construction for comfortable daily wear</li>
+                <li>Scratch-resistant glass face protects against daily wear</li>
+                <li>Adjustable strap fits wrists from 6.5" to 8.5"</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Highlight Boxes -->
+    <section class="highlights">
+        <div class="container">
+            <h2 class="section-title">What Sets Us Apart</h2>
+            <div class="highlights-grid">
+                <div class="highlight-box">
+                    <div class="highlight-number">72%</div>
+                    <h3 class="highlight-title">Massive Savings</h3>
+                    <p class="highlight-desc">Limited-time discount from retail price of $89.99 - save over $65 today!</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <div class="highlight-number">4.8★</div>
+                    <h3 class="highlight-title">Customer Rated</h3>
+                    <p class="highlight-desc">Thousands of satisfied customers love the quality, comfort, and style of this timepiece</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <div class="highlight-number">24/7</div>
+                    <h3 class="highlight-title">Style Statement</h3>
+                    <p class="highlight-desc">Perfect accessory that complements any outfit, from casual jeans to business attire</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="urgent-tag">🔥 ONLY 24 HOURS LEFT 🔥</div>
+            <h2>Don't Miss This Incredible Deal!</h2>
+            <p>Join thousands of satisfied customers who've already upgraded their style game. This exclusive offer won't last long!</p>
+            <a href="https://www.temu.com/pk-en/1pc--mens-fashion-quartz-watch-alloy-case-silica-gel-strap-round-dial-pointer-display-battery-powered-non-waterproof-for-casual-wear-g-601102217167827.html" class="cta-main">Secure Your Watch Now - Only $24.99</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="cookie.html">Cookie Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p>&copy; 2025 TimeStyle Pro. All rights reserved. Prices and availability subject to change.</p>
+        </div>
+    </footer>
+</body>
+</html>
